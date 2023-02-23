@@ -81,7 +81,7 @@ function hrefDefense(event) {
   // alert("click") // alert은 우선 실행대상이기에 클릭하면 이동하지 않지만, 그 다음에는 넘어가게 될 것이야
 }
 
-links.addEventListener("click", hrefDefense)
+// links.addEventListener("click", hrefDefense)
 
 // 자 이번에는 이름이 제출되면, Form이 사라지게 해보자. 
 // 자 이번엔 이름을 저장해 보자. 

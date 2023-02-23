@@ -16,7 +16,7 @@ h1 {
 }
 
 .hidden {
-  visibility:hidden;
-  /* display: none; */
+  /* visibility:hidden; */
+  display: none;
   /* visibility 해당공간은 두고, display 공간자체를 숨기는 차이가 있다. */
 }

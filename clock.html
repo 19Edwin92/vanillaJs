@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NomadCoder - Clock</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/app.js"></script>
+  <script defer src="/js/clock.js"></script>
+  <script defer src="/js/quotes.js"></script>
+  <script defer src="/js/backgorundimg.js"></script>
+  <script defer src="/js/todo.js"></script>
+
+</head>
+<body>
+  <h2 id="clock">00:00</h2> 
+  <form id="login-form" class="hidden">
+    <input required maxlength="15" type="text" name="" id="" placeholder="what is your name" />
+    <!-- form를 활용하면 입력을 하지 않았을 때, 또한  required maxlength를 통해서 길이를 제한 할 수 도 있다.-->
+    <!-- form태그를 확인하면 submit 이 활성화 된다는 것이고, 새로고침되며 정보고를 어딘가에 보낸다는 것이다.  -->
+    <input type="submit" value="Login">
+  </form>
+  <div class="hello">
+    <h1 id="greeting" class="hidden"></h1> <button class="logout hidden">로그아웃</button>
+  </div>  
+  <form id="todo_form">
+    <input type="text" placeholder="해야할 일 목록을 입력해주세요.">
+  </form>
+  <ul id="todo_lists">
+
+  </ul>
+
+ <div id="quote">
+  <span></span>
+  <span></span>
+ </div>
+</body>
+</html> 
