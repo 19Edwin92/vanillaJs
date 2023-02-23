@@ -19,11 +19,29 @@
 
 </head>
 <body>
-<input type="button" value="팝업" onclick="openpopup()">
-<a href="#none" onclick="window.open('index2.html', 'popup', 'width=300, height=300')">팝업</a>  
+<form id="login-form" class="hidden">
+  <input required maxlength="15" type="text" name="" id="" placeholder="what is your name" />
+  <!-- form를 활용하면 입력을 하지 않았을 때, 또한  required maxlength를 통해서 길이를 제한 할 수 도 있다.-->
+  <!-- form태그를 확인하면 submit 이 활성화 된다는 것이고, 새로고침되며 정보고를 어딘가에 보낸다는 것이다.  -->
+  <input type="submit" value="Login">
+</form>
 
+<input type="button" value="팝업" onclick="openpopup()">
+<!-- <a href="#none" onclick="window.open('index2.html', 'popup', 'width=300, height=300')">팝업</a>  -->
+<a href="https://nomadcoders.co/javascript-for-beginners/lectures/2902">노마드코더</a> 
 <div class="hello">
-  <h1> Grab Me</h1>
+  <h1 id="greeting" class="hidden"></h1>
+  <img width="700" src="/localstorage.png" alt="localstorage">
+  <p>개발자도구 창에서 Application > Storage 를 보면 살펴 볼 수 있다. 가장 쉬운 방법을 뭔저 다뤄보겠다.  </p>
+  <p>MDN을 보면, localStorage.setItem 로컬스토리지의 많은 다양한 메서드들이 존재하고 그 가운데 하나로 setItem 을 다뤄보겠다. </p>
+  <br><br>
+  콘솔에 다음과 같이 입력해보자. <span class="red">localStorage.setItem("usernemt", "edwin")</span>
+  <img width="700" src="/localstorage2.png" alt="localstorage"><br>
+  그러면 위와 같이 로컬스토리지를 사용하고 있는 것을 볼 수 있다. 이로써 원하는 값을 저장하여 살펴 볼 수 있고 이를 가져올 수 있다. <br>
+  <span class="red">localStorage.getItem("usernemt")</span>
+  <br> 제거도 간단하다. <span class="red">localStorage.remove("usernemt")</span>
+  <br>마치 작은 DB를 가지게 된 것이다. 
+
 </div>
 
 </body>
