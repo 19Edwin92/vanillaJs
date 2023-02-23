@@ -20,6 +20,7 @@ const loginInput = document.querySelector("#login-form input")
 const loginForm = document.querySelector("#login-form");
 const links = document.querySelector("a")
 const h1tag = document.querySelector("#greeting")
+const logout = document.querySelector('.logout');
 
 // function loginbuttonaction() {
   //유저의 유효성 
@@ -57,6 +58,7 @@ function onLoginSubumit(event) { //event로 매개변수를 적는 것이 일반
 
 function paintGreetin(userName) {
   h1tag.classList.remove(HIDDEN_CLASSNAME)
+  logout.classList.remove(HIDDEN_CLASSNAME)
   h1tag.innerText = `안녕 ${userName}`
 }
 
@@ -89,3 +91,10 @@ links.addEventListener("click", hrefDefense)
 
 // 기억하기 API 
 // 브라우저는 로컬스토리지 
+//로그아웃
+
+logout.addEventListener("click", checkout)
+function checkout(event) {
+  localStorage.removeItem("username")
+  window.location.reload()
+}
